@@ -9,7 +9,7 @@ df.to_csv('heart_updated.csv', index=False)
 
 
 
-def hist_sex_disease():
+def hist_sex_disease(df):
     fig = px.histogram(df, x='Sex', color='HeartDisease', barmode='group',
                        title='Heart Disease Distribution by Gender', text_auto=True)
     return fig
