@@ -3,3 +3,4 @@ database.sqlite
 database.sqlite 
 "database.sqlite" 
 .venv
+__pycache__
