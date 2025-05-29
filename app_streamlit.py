@@ -1,7 +1,7 @@
 
 import streamlit as st
 import pandas as pd
-import AppStreamfig
+import appstreamdash
 
 
 df = pd.read_csv("heart.csv")
@@ -14,18 +14,18 @@ st.set_page_config(layout="wide")
 st.title(" Heart Disease Dashboard")
 
 # Graphs
-st.plotly_chart(AppStreamfig.hist_sex_disease(df))
-st.plotly_chart(AppStreamfig.box_age_disease(df))
-st.plotly_chart(AppStreamfig.scatter_age_maxhr(df))
-st.plotly_chart(AppStreamfig.hist_chest_pain(df))
-st.plotly_chart(AppStreamfig.violin_bp_by_disease(df))
-st.plotly_chart(AppStreamfig.scatter_chol_age(df))
-st.plotly_chart(AppStreamfig.treemap_gender_chestpain(df))
-st.plotly_chart(AppStreamfig.hist_chestpain_gender(df))
-st.plotly_chart(AppStreamfig.violin_maxhr_gender(df))
-st.plotly_chart(AppStreamfig.bar_chestpain_gender(df))
-st.plotly_chart(AppStreamfig.hist_st_slope(df))
-st.plotly_chart(AppStreamfig.pie_chestpain(df))
+st.plotly_chart(appstreamdash.hist_sex_disease(df))
+st.plotly_chart(appstreamdash.box_age_disease(df))
+st.plotly_chart(appstreamdash.scatter_age_maxhr(df))
+st.plotly_chart(appstreamdash.hist_chest_pain(df))
+st.plotly_chart(appstreamdash.violin_bp_by_disease(df))
+st.plotly_chart(appstreamdash.scatter_chol_age(df))
+st.plotly_chart(appstreamdash.treemap_gender_chestpain(df))
+st.plotly_chart(appstreamdash.hist_chestpain_gender(df))
+st.plotly_chart(appstreamdash.violin_maxhr_gender(df))
+st.plotly_chart(appstreamdash.bar_chestpain_gender(df))
+st.plotly_chart(appstreamdash.hist_st_slope(df))
+st.plotly_chart(appstreamdash.pie_chestpain(df))
 
 # Medical Insights Section
 st.subheader("Medical Insights")

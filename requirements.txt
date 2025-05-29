@@ -1,6 +1,5 @@
-plotly
-plotly
-pandas
 streamlit
+pandas
+plotly
 scikit-learn
 joblib
